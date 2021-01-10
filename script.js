@@ -23,3 +23,13 @@ $(document).ready(function(){
         }
     });
 });
+
+// // Language selector
+// function changeLanguage() {
+//     var img1 = "icons/netherlands.svg";
+//     var img2 = "icons/united-kingdom.svg";
+    
+//     var imgElement = document.getElementById('language');
+ 
+//     imgElement.src = (imgElement.src == img1)? img2 : img1;
+// }

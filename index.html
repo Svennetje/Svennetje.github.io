@@ -4,56 +4,190 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sven Hansen | Software & App Developer! | HBO ICT Student</title>
+    <title>Sven Hansen | Software & App Developer!</title>
     <meta name="description" content="Hi, ik ben Sven Hansen, Software & App Developer en in mijn vrije tijd bezig met het vergroten van mijn Web Development kennis">
     <meta name="author" content="Sven Hansen">
     <meta name="copyright" content="Sven Hansen"/>
     <meta name="keywords" content=""/> <!-- TODO: Meta keywords invullen -->
-
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="logo/logo_small.png"/>
-
     <script src="https://kit.fontawesome.com/111fbe67fc.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <a href="#sTop"><img src="logo/logo.svg" href="" id="brand-logo" class="sticky"></img></a>
-    <section id="sTop">
+    <a href="#top"><img src="logo/logo.svg" id="brand-logo" class="sticky"/></a>
+
+    <section id="top">
         <nav>
-            <ul> 
-                <li><a href="#sContact" class="fab fa-wpforms grow-small"><br>Contact</a></li>
-                <li><a href="#sProjects" class="fas fa-code grow-small"><br>Projecten</a></li>
-                <li><a href="#sLifecycle" class="fab fa-slideshare grow-small"><br>Levensloop</a></li>
-                <li><a href="#sHome" class="fas fa-igloo grow-small"><br>Home</a></li>
+            <ul class="navigation">
+                <li><a><img src="icons/united-kingdom.svg" id="language" class="icon"/></a></li>
+                <li><a href="#contact" class="fab fa-wpforms grow-small no-underline"><br>Contact</a></li>
+                <li><a href="#projects" class="fas fa-code grow-small no-underline"><br>Projecten</a></li>
+                <li><a href="#about" class="fab fa-slideshare grow-small no-underline"><br>Over</a></li>
+                <li><a href="#home" class="fas fa-igloo grow-small no-underline"><br>Home</a></li>
             </ul>
         </nav>
     </section>
 
-    <section id="sHome" class="section">
+    <section id="home" class="section">
         <div class="container">
-            <h1 class="title">Home</h1>
-
-            <ul class="about-contact">
-                <li>
-                    <a href="https://www.linkedin.com/in/dev-svenhansen/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.github.com/svennetje/" target="_blank" title="Github"><i class="fab fa-github-square"></i></a>
-                </li>
-                <li>
-                    <a href="resume.pdf" target="_blank" title="Download Resume">CV</a>
-                </li>
-            </ul>
+            <h2 class="title" id="test">.Home</h2>
+            <div class="content">
+                <h3>Hé jij daar!</h3>
+                <h6>Mijn naam is Sven, en noem mijzelf ook wel een Software- en Mobile Developer.</h6>
+                <img src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Light'></div>
+            </div>
         </div>
     </section>
 
-    <!-- TODO: Aparte section voor Opleidingen & Levensloop met Ervaring -->
-
-    <section id="sLifecycle" class="section">
+    <section id="about" class="section">
         <div class="container">
-            <h1 class="title">Levensloop</h1>
-            <div class="row">
+            <h2 class="title">.Over</h2>
+            <div class="content">
+                <ul class="about-links">
+                    <li>
+                        <a href="https://www.linkedin.com/in/dev-svenhansen/" target="_blank" title="LinkedIn" class="grow-small"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.github.com/svennetje/" target="_blank" title="Github" class="grow-small"><i class="fab fa-github-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="resume.pdf" target="_blank" title="Download Resume" class="grow-small no-underline">CV</a>
+                    </li>
+                </ul>
+            
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <div class="row">
+                        <div class="col">
+                            Web Ontwikkeling
+                            <br>
+                            PHP, HTML, CSS
+                        </div>
+                        <div class="col">
+                            Mobiele Ontwikkeling
+                            <br>
+                            SwiftUI, Kotlin
+                        </div>
+                        <div class="col">
+                            Software Ontwikkeling
+                            <br>
+                            C#, Git, SQL, Databases
+                        </div>
+                        <!-- <div class="col">
+                            Self development, <br>
+                            Always learning :]
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="tools">
+                    <h3>Skills/jaren</h3>
+                    <ul>
+                        <li>
+                            //TODO Skills/jaren
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="experience">
+                    <h3>Ervaring</h3>
+                    <div class="row">
+                        <div class="col">
+                            <b class="">Junior Software Developer</b>
+                            <br>
+                            @
+                            <a href="https://consolomio.i4things.eu" target="_blank" id="i4things" title="i4things.eu" class="no-underline">i4Things B.V.</a>
+                            <br>
+                            Jul. 2020 - heden
+                        </div>
+                        <div class="col">
+                            <b class="">Stagiaire Applicatie- en Media Ontwikkelaar</b>
+                            <br>
+                            @ 
+                            <a href="https://consolomio.i4things.eu" target="_blank" id="i4things" title="i4things.eu" class="no-underline">i4Things B.V.</a>
+                            <br>
+                            Feb. 2020 - Jul. 2020
+                        </div>
+                        <div class="col">
+                            <b class="">Stagiaire Applicatie- en Media Ontwikkelaar</b>
+                            <br>
+                            @ 
+                            <a href="https://a3bc.eu" target="_blank" id="a3bc" title="A3bc.eu" class="no-underline">A3bc Data & Telecom</a>
+                            <br>
+                            Aug. 2018 - Jan. 2019
+                        </div>
+                    </div>
+                    <!-- <ul>
+                        <li>
+                            <b class="">Junior Software Developer</b>
+                            <br>
+                            @ i4Things B.V.
+                            <br>
+                            Jul. 2020 - heden
+                        </li>
+                        <li>
+                            <b class="">Stagiaire Applicatie- en Media Ontwikkelaar</b>
+                            <br>
+                            @ i4Things B.V.
+                            <br>
+                            Feb. 2020 - Jul. 2020
+                        </li>
+                        <li>
+                            <b class="">Stagiaire Applicatie- en Media Ontwikkelaar</b>
+                            <br>
+                            @ A3bc Data & Telecom
+                            <br>
+                            Aug. 2018 - Jan. 2019
+                        </li>
+                    </ul> -->
+                </div>
+
+                <div class="languages">
+                    <h3>Talen</h3>
+                    <div class="row">
+                        <div class="col-4">
+                            <span class="comment">Moedertaal</span>
+                            <br>
+                            <i class="country-code"><b>nl-NL</b></i>
+                            Nederlands
+                        </div>
+                        <div class="col-4">
+                            <span class="comment">Professioneel</span>
+                            <br>
+                            <i class="country-code"><b>en-US</b></i>
+                            Engels
+                        </div>
+                        <div class="col-4">
+                            <span class="comment">Beperkt</span>
+                            <br>
+                            <i class="country-code"><b>de-DE</b></i>
+                            Duits
+                        </div>
+                    </div>
+                    <!-- <ul>
+                        <li>
+                            <span class="comment">Fluent</span>
+                            <br>
+                            <i class="country-code"><b>nl-NL</b></i>
+                            Dutch
+                            <br>
+                            <i class="country-code"><b>en-US</b></i>
+                            English 
+                        </li>
+                        <li>
+                            <span class="comment">Intermediate</span>
+                            <br>
+                            <i class="country-code"><b>de-DE</b></i>
+                            Deutsch
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+
+            <!-- <div class="row">
                 <div class="col-md-12">
                     <div class="main-timeline">
                         <div class="timeline">
@@ -128,57 +262,68 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="title">.Projecten</h2>
+            <div class="content">
+                <div class="cards">
+                    <article class="">
+                        <img class="article-img" src="" alt=" " />
+                        <h6 class="article-title">
+                            SwiftUI / API Weather APP
+                        </h6>
+                    </article>
+                    <article>
+                        <img class="article-img" src="" alt=" " />
+                        <h6 class="article-title">
+                            SwiftUI Instagram Replica 
+                        </h6>
+                    </article>
+                    <article>
+                        <img class="article-img" src="" alt=" " />
+                        <h6 class="article-title">
+                            SwiftUI <!-- Specto --> Prototype
+                        </h6>
+                    </article>
+                    <article>
+                        <img class="article-img" src="" alt=" " />
+                        <h6 class="article-title">
+                            SwiftUI / API MovieDB
+                        </h6>
+                    </article>
+                    <article>
+                        <img class="article-img" src="" alt=" " />
+                        <h6 class="article-title">
+                            C# EduBot Prototype
+                        </h6>
+                    </article>
+                    <article>
+                        <img class="article-img" src="" alt=" " />
+                        <h6 class="article-title">
+                            Android Consolomio Control Panel
+                        </h6>
+                    </article>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="sProjects" class="section">
+    <section id="contact" class="section">
         <div class="container">
-            <h1 class="title">Vrijetijds bezigheden</h1>
-            <section class="cards">
-                <article class="">
-                    <img class="article-img" src="" alt=" " />
-                    <h1 class="article-title">
-                        SwiftUI / API Weather APP
-                    </h1>
-                </article>
-                <article>
-                    <img class="article-img" src="" alt=" " />
-                    <h1 class="article-title">
-                        SwiftUI Instagram Replica 
-                    </h1>
-                </article>
-                <article>
-                    <img class="article-img" src="" alt=" " />
-                    <h1 class="article-title">
-                        SwiftUI Specto Prototype
-                    </h1>
-                </article>
-                <article>
-                    <img class="article-img" src="" alt=" " />
-                    <h1 class="article-title">
-                        SwiftUI / API MovieDB
-                    </h1>
-                </article>
-                <article>
-                    <img class="article-img" src="" alt=" " />
-                    <h1 class="article-title">
-                        C# EduBot Prototype
-                    </h1>
-                </article>
-                <article>
-                    <img class="article-img" src="" alt=" " />
-                    <h1 class="article-title">
-                        Android Consolomio Control Panel
-                    </h1>
-                </article>
-            </section>
+            <h2 class="title">.Contact</h2>
+            <div class="content">
+                <a href="mailto:svenroermond@hotmail.com" target="_blank" title="Mail" class="grow-small"><i class="fas fa-envelope"></i></a>
+            </div>
         </div>
     </section>
 
-    <section id="sContact" class="section">
+    <section id="footer" class="section">
         <div class="container">
-            <h1 class="title">Contact</h1>
+            <p><small>Geprogrammeerd door Sven Hansen</small></p>
         </div>
     </section>
 

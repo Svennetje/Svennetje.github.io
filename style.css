@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-/* Custom Color Stylesheet Variables ------------------------------------------------- */
+/* || Custom Color Set */
 
 :root {
     --white: #ffffff;
@@ -18,18 +19,24 @@
     --olive: #3D9970;
     --teal: #39CCCC;
     --aqua: #7FDBFF;
-    --blue: #0074D9;
+    --blue: #057AFF;
     --navy: #001F3F;
+    --comment: #555;
 }
 
-/* Custom CSS ------------------------------------------------- */
+/* || Custom CSS */
 
 html {
     scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
     padding: 2.5vw 10vw;
+}
+
+.no-underline {
+    text-decoration: none !important;
 }
 
 ul {
@@ -40,7 +47,7 @@ ul {
     overflow: hidden;
 }
   
-li {
+.navigation li {
     float: right;    
 }
 
@@ -56,7 +63,6 @@ li a {
     font-weight: bold;
     text-decoration: none;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
 }
 
 .section {
@@ -71,17 +77,63 @@ li a {
 }
 
 .title {
-    font-family: 'Roboto', sans-serif;
     text-align: left;
-    left: 7.5vw;
-    margin-bottom: 50px;
+    margin-top: 50px;
     color: var(--black);
 }
 
-/* Custom animations ------------------------------------------------- */
+.about-links li {
+    float: left;
+}
+
+.comment {
+    color: var(--black);
+    opacity: 0.5;
+}
+
+#i4things {
+    color: var(--blue);
+    padding: 2px;
+    transition: 0.4s ease;
+}
+
+#i4things:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+#a3bc {
+    color: var(--orange);
+    padding: 2px;
+    transition: 0.4s ease;
+}
+
+#a3bc:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.country-code {
+    color: var(--black);
+}
+
+.icon {
+    height: 32px;
+    width: 32px;
+}
+
+.content {
+    padding-left: 2.5vw;
+}
+
+/* .content li {
+    margin: 5px 5px 5px 5px;
+} */
+
+/* || Custom animations */
 
 .grow-small {
-    transition: transform .4s;
+    transition: transform .3s;
 }
 
 .grow-small:hover {
@@ -90,7 +142,7 @@ li a {
     transform: scale(1.25); 
 }
 
-/* Projects Grid ------------------------------------------------- */
+/* || Projects Grid */
 
 .cards {
     display: grid;
@@ -117,11 +169,10 @@ article {
     bottom: 0;
     width: 100%;
     padding: 10px;
-    font-family: 'Roboto', sans-serif;
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* Timeline ------------------------------------------------- */
+/* || Years Timeline */
 
 .main-timeline {
     font-family: 'Poppins', sans-serif;
@@ -131,7 +182,7 @@ article {
 
 .main-timeline:before {
     content: '';
-    background-color: var(--white);
+    /* background-color: var(--white); */
     height: 100%;
     width: 60%;
     transform: translateX(-50%);
@@ -148,7 +199,7 @@ article {
 
 .main-timeline .timeline:before {
     content: '';
-    border: 20px solid #FF9B00;
+    /* border: 20px solid #FF9B00; */
     height: 90%;
     /* width: 50%; */
     border-radius: 100px;
@@ -159,7 +210,7 @@ article {
 }
 
 .main-timeline .timeline-content {
-    background-color: var(--white);
+    /* background-color: var(--white); */
     text-align: center;
     width: 60%;
     padding: 10px 15px 60px;
