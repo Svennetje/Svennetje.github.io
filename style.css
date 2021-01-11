@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 /* || Custom Color Set */
 
@@ -20,7 +18,7 @@
     --teal: #39CCCC;
     --aqua: #7FDBFF;
     --blue: #057AFF;
-    --navy: #001F3F;
+    --navy: #002C31;
     --comment: #555;
 }
 
@@ -28,11 +26,15 @@
 
 html {
     scroll-behavior: smooth;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
     padding: 2.5vw 10vw;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--navy);
 }
 
 .no-underline {
@@ -49,6 +51,10 @@ ul {
   
 .navigation li {
     float: right;    
+}
+
+nav {
+    width: 100%;
 }
 
 #brand-logo {
@@ -79,7 +85,7 @@ li a {
 .title {
     text-align: left;
     margin-top: 50px;
-    color: var(--black);
+    color: var(--navy);
 }
 
 .about-links li {
@@ -91,24 +97,24 @@ li a {
     opacity: 0.5;
 }
 
-#i4things {
+.i4things {
     color: var(--blue);
     padding: 2px;
     transition: 0.4s ease;
 }
 
-#i4things:hover {
+.i4things:hover {
     background-color: var(--blue);
     color: var(--white);
 }
 
-#a3bc {
+.a3bc {
     color: var(--orange);
     padding: 2px;
     transition: 0.4s ease;
 }
 
-#a3bc:hover {
+.a3bc:hover {
     background-color: var(--orange);
     color: var(--white);
 }
@@ -284,57 +290,92 @@ article {
     .main-timeline .title { font-size: 18px; }
 }
 
-/* Define the shape and color of the hamburger lines */
-.navbar-toggler span {
-    display: block;
-    background-color: var(--black);
-    height: 3px;
-    width: 25px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+/* Mobile Navbar Icon Animation */
+
+#nav-icon {
+    width: 60px;
+    height: 37.5px;
     position: relative;
+    margin: 10px auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#nav-icon span {
+    display: block;
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    background: var(--navy);
+    border-radius: 9px;
     left: 0;
-    opacity: 1;
-    transition: all 0.35s ease-out;
-    transform-origin: center left;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+#nav-icon span:nth-child(1) {
+    top: 0px;
+}
+
+#nav-icon span:nth-child(2),#nav-icon span:nth-child(3) {
+    top: 18px;
+}
+
+#nav-icon span:nth-child(4) {
+    top: 36px;
+}
+
+#nav-icon.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+#nav-icon.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#nav-icon.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#nav-icon.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+.navbar-toggler {
+    border: none !important;
 }
 
 
-/* top line needs a little padding */
-.navbar-toggler span:nth-child(1) {
-    margin-top: 0.3em;
-}
+/* Phone */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 0 0;
+    }
 
-/* Animate collapse into X */
-
-/* top line rotates 45 degrees clockwise and moves up and in a bit to close the center of the X in the center of the button */
-.navbar-toggler:not(.collapsed) span:nth-child(1) {
-    transform: translate(15%, -33%) rotate(45deg);
-}
-
-/* center line goes transparent */
-.navbar-toggler:not(.collapsed) span:nth-child(2) {
-    opacity: 0;
-}
-
-/* bottom line rotates 45 degrees counter clockwise, in, and down a bit to close the center of the X in the center of the button  */
-.navbar-toggler:not(.collapsed) span:nth-child(3) {
-    transform: translate(15%, 33%) rotate(-45deg) ;
-}
-
-/* Animate collapse open into hamburger menu */
-
-/* top line moves back to initial position and rotates back to 0 degrees */
-.navbar-toggler span:nth-child(1) {
-    transform: translate(0%, 0%) rotate(0deg) ;
-}
-
-/* middle line goes back to regular color and opacity */
-.navbar-toggler span:nth-child(2) {
-    opacity: 1;
-}
-
-/* bottom line goes back to initial position and rotates back to 0 degrees */
-.navbar-toggler span:nth-child(3) {
-    transform: translate(0%, 0%) rotate(0deg) ;
+    #brand-logo {
+        visibility: hidden;
+    }
 }
