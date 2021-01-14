@@ -10,6 +10,7 @@
     <meta name="copyright" content="Sven Hansen"/>
     <meta name="keywords" content=""/> <!-- TODO: Meta keywords invullen -->
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="logo/logo_small.png"/>
     <script src="https://kit.fontawesome.com/111fbe67fc.js" crossorigin="anonymous"></script>
@@ -17,11 +18,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <!-- <a href="#top"><img src="logo/logo.svg" id="brand-logo" class="sticky"/></a> -->
-
-    <section id="top" class="section">
-        <div class="container">
+<body>  
+    <div class="container">
+        <!-- <a href="#top"><img src="logo/logo.svg" id="brand-logo" class="sticky"/></a> -->
+        <section id="top" class="section">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <div id="nav-icon">
@@ -41,252 +41,239 @@
                     </ul>
                 </div>
             </nav>
-        </div>
-    </section>
+        </section>
 
-    <section id="home" class="section">
-        <div class="container">
+        <section id="home" class="section" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="900">
             <p class="title"></p>
-            <div class="content">
-                <h1>
+            <h1>
+                <b>
                     Hey! Ik ben Sven ¬ <!-- — --> 
                     <br>
-                    — een <b class="highlight">Software</b> en <b class="highlight">Mobile</b> developer•
-                </h1>
-                <blockquote class="ludwig">
-                    "Die net het extra stapje zet"
-                </blockquote>
-                <h6>
+                    — een <span class="purple">Software 👨🏼‍💻</span> en <span class="purple">Mobile 📱</span> developer
+                </b>
+            </h1>
+            <blockquote class="ludwig">
+                "die net dat extra stapje zet"
+            </blockquote>
+            <h5>
+                <b>
                     Momenteel werkzaam bij 
                     <a href="https://consolomio.i4things.eu" target="_blank" class="i4things no-underline" title="i4things.eu">i4Things</a>
-                    voor het ondersteunen in de mobiele ontwikkeling,
+                    voor het ondersteunen in de mobiele ontwikkeling
                     <br> 
-                    en student Software Engineering aan Fontys Hogenscholen.
+                    en student Software Engineering aan Fontys Hogenscholen
+                </b>
+            </h5>
+            <div class="about-links pt-md-4">
+                <a href="mailto:svenroermond@hotmail.com" target="_blank" title="Mail" class="grow-small"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/dev-svenhansen/" target="_blank" title="LinkedIn" class="grow-small"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.github.com/svennetje/" target="_blank" title="Github" class="grow-small"><i class="fab fa-github-square"></i></a>
+                <a href="resume.pdf" target="_blank" title="Download CV" class="grow-small no-underline">CV</a>
+            </div>
+            <a href="#about" class="fas fa-arrow-down grow-small no-underline go-down"></a>
+            <!-- <img src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Light'></div> -->
+        </section>
+
+        <section id="about" class="section">
+            <p class="title">INFORMATIE</p>
+            <div class="skills">
+                <h3>Skills</h3>
+                <div class="row">
+                    <div class="col-sm-4 pt-2">
+                        <b class="">Web Ontwikkeling</b>
+                        <br>
+                        PHP, HTML, CSS
+                    </div>
+                    <div class="col-sm-4 pt-2">
+                        <b class="">Mobiele Ontwikkeling</b>
+                        <br>
+                        SwiftUI, Kotlin
+                    </div>
+                    <div class="col-sm-4 pt-2">
+                        <b class="">Software Ontwikkeling</b>
+                        <br>
+                        C#, Git, SQL, Databases
+                    </div>
+                </div>
+            </div>
+
+            <div class="years pt-4">
+                <h3>Skills/jaren</h3>
+                <div class="row">
+                    <div class="col-sm-4 pt-2">
+                        PHP/+4
+                        <br>
+                        HTML/+4
+                        <br>
+                        CSS/+4
+                    </div>
+                    <div class="col-sm-4 pt-2">
+                        SwiftUI/~1
+                        <br>
+                        Kotlin/+1
+                    </div>
+                    <div class="col-sm-1 pt-2">
+                        C#/+4
+                        <br>
+                        Git/+3
+                        <br>
+                        SQL/+4
+                    </div>
+                    <div class="col-sm-3 pt-md-2">
+                        Databases/+3
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience pt-4">
+                <h3>Ervaring</h3>
+                <div class="row">
+                    <div class="col-sm-4 pt-2">
+                        <b class="">Junior Software Developer</b>
+                        <br>
+                        @
+                        <a href="https://consolomio.i4things.eu" target="_blank" class="i4things no-underline" title="i4things.eu">i4Things B.V.</a>
+                        <br>
+                        Jul. 2020 - heden
+                    </div>
+                    <div class="col-sm-4 pt-2">
+                        <b class="">Stagiaire Applicatie- en Media Ontwikkelaar</b>
+                        <br>
+                        @ 
+                        <a href="https://consolomio.i4things.eu" target="_blank" class="i4things no-underline" title="i4things.eu">i4Things B.V.</a>
+                        <br>
+                        Feb. 2020 - Jul. 2020
+                    </div>
+                    <div class="col-sm-4 pt-2">
+                        <b class="">Stagiaire Applicatie- en Media Ontwikkelaar</b>
+                        <br>
+                        @ 
+                        <a href="https://a3bc.eu" target="_blank" class="a3bc no-underline" title="A3bc.eu">A3bc Data & Telecom</a>
+                        <br>
+                        Aug. 2018 - Jan. 2019
+                    </div>
+                </div>
+            </div>
+
+            <div class="languages pt-4">
+                <h3>Talen</h3>
+                <div class="row">
+                    <div class="col-sm-4 pt-2">
+                        <span class="comment">Moedertaal</span>
+                        <br>
+                        <i class="country-code"><b class="">nl-NL</b></i>
+                        Nederlands
+                    </div>
+                    <div class="col-sm-4 pt-2">
+                        <span class="comment">Professioneel</span>
+                        <br>
+                        <i class="country-code"><b class="">en-US</b></i>
+                        Engels
+                    </div>
+                    <div class="col-sm-4 pt-2">
+                        <span class="comment">Beperkt</span>
+                        <br>
+                        <i class="country-code"><b class="">de-DE</b></i>
+                        Duits
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <p class="title">VRIJETIJDS PROJECTEN</p>
+            <div class="row">
+                <div class="col-sm-6 pb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/empty_iphone12.jpg"> <!-- images/specto_iphone12.png -->
+                        <div class="card-body">
+                            <h4 class="card-title">SwiftUI Specto Prototype App</h4>
+                            <p class="card-text">[ Work in progress ]</p>
+                            <a class="btn"><i class="fas fa-arrow-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 pb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/empty_iphone12.jpg"> <!-- images/weather_iphone12.png -->
+                        <div class="card-body">
+                            <h4 class="card-title">SwiftUI / API Weather App</h4>
+                            <p class="card-text">[ Work in progress ]</p>
+                            <a class="btn"><i class="fas fa-arrow-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 pb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/empty_iphone12.jpg"> <!-- images/instagramReplica_iphone12.png -->
+                        <div class="card-body">
+                            <h4 class="card-title">SwiftUI Instagram Replica App</h4>
+                            <p class="card-text">[ Work in progress ]</p>
+                            <a class="btn"><i class="fas fa-arrow-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 pb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="">
+                        <div class="card-body">
+                            <h4 class="card-title">SwiftUI / API MovieDB</h4>
+                            <p class="card-text">[ Work in progress ]</p>
+                            <a class="btn"><i class="fas fa-arrow-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <article>
+                <img class="article-img" src="" alt=" " />
+                <h6 class="article-title">
+                    SwiftUI Instagram Replica App
                 </h6>
-                <!-- <img src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Light'></div> -->
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="section">
-        <div class="container">
-            <p class="title">Wat informatie over mij</p>
-            <div class="content">
-                <div class="skills">
-                    <h3>Skills</h3>
-                    <div class="row">
-                        <div class="col-sm-4 pt-2">
-                            <b class="">Web Ontwikkeling</b>
-                            <br>
-                            PHP, HTML, CSS
-                        </div>
-                        <div class="col-sm-4 pt-2">
-                            <b class="">Mobiele Ontwikkeling</b>
-                            <br>
-                            SwiftUI, Kotlin
-                        </div>
-                        <div class="col-sm-4 pt-2">
-                            <b class="">Software Ontwikkeling</b>
-                            <br>
-                            C#, Git, SQL, Databases
-                        </div>
-                    </div>
-                </div>
-
-                <div class="years pt-4">
-                    <h3>Skills/jaren</h3>
-                    <div class="row">
-                        <div class="col-sm-4 pt-2">
-                            PHP/+4
-                            <br>
-                            HTML/+4
-                            <br>
-                            CSS/+4
-                        </div>
-                        <div class="col-sm-4 pt-2">
-                            SwiftUI/~1
-                            <br>
-                            Kotlin/+1
-                        </div>
-                        <div class="col-sm-4 pt-2">
-                            C#/+4
-                            <br>
-                            Git/+3
-                            <br>
-                            SQL/+4
-                            <br>
-                            Databases/+3
-                        </div>
-                    </div>
-                </div>
-
-                <div class="experience pt-4">
-                    <h3>Ervaring</h3>
-                    <div class="row">
-                        <div class="col-sm-4 pt-2">
-                            <b class="">Junior Software Developer</b>
-                            <br>
-                            @
-                            <a href="https://consolomio.i4things.eu" target="_blank" class="i4things no-underline" title="i4things.eu">i4Things B.V.</a>
-                            <br>
-                            Jul. 2020 - heden
-                        </div>
-                        <div class="col-sm-4 pt-2">
-                            <b class="">Stagiaire Applicatie- en Media Ontwikkelaar</b>
-                            <br>
-                            @ 
-                            <a href="https://consolomio.i4things.eu" target="_blank" class="i4things no-underline" title="i4things.eu">i4Things B.V.</a>
-                            <br>
-                            Feb. 2020 - Jul. 2020
-                        </div>
-                        <div class="col-sm-4 pt-2">
-                            <b class="">Stagiaire Applicatie- en Media Ontwikkelaar</b>
-                            <br>
-                            @ 
-                            <a href="https://a3bc.eu" target="_blank" class="a3bc no-underline" title="A3bc.eu">A3bc Data & Telecom</a>
-                            <br>
-                            Aug. 2018 - Jan. 2019
-                        </div>
-                    </div>
-                </div>
-
-                <div class="languages pt-4">
-                    <h3>Talen</h3>
-                    <div class="row">
-                        <div class="col-sm-4 pt-2">
-                            <span class="comment">Moedertaal</span>
-                            <br>
-                            <i class="country-code"><b class="">nl-NL</b></i>
-                            Nederlands
-                        </div>
-                        <div class="col-sm-4 pt-2">
-                            <span class="comment">Professioneel</span>
-                            <br>
-                            <i class="country-code"><b class="">en-US</b></i>
-                            Engels
-                        </div>
-                        <div class="col-sm-4 pt-2">
-                            <span class="comment">Beperkt</span>
-                            <br>
-                            <i class="country-code"><b class="">de-DE</b></i>
-                            Duits
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="section">
-        <div class="container">
-            <p class="title">Vrijetijds projecten</p>
-            <div class="content">
-                <div class="row">
-                    <div class="col-sm-6 pb-4">
-                        <div class="card">
-                            <img class="card-img-top" src="images/empty_iphone12.jpg"> <!-- images/specto_iphone12.png -->
-                            <div class="card-body">
-                                <h4 class="card-title">SwiftUI Specto Prototype App</h4>
-                                <p class="card-text">[ Work in progress ]</p>
-                                <a class="btn"><i class="fas fa-arrow-down"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 pb-4">
-                        <div class="card">
-                            <img class="card-img-top" src="images/empty_iphone12.jpg"> <!-- images/weather_iphone12.png -->
-                            <div class="card-body">
-                                <h4 class="card-title">SwiftUI / API Weather App</h4>
-                                <p class="card-text">[ Work in progress ]</p>
-                                <a class="btn"><i class="fas fa-arrow-down"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 pb-4">
-                        <div class="card">
-                            <img class="card-img-top" src="images/empty_iphone12.jpg"> <!-- images/instagramReplica_iphone12.png -->
-                            <div class="card-body">
-                                <h4 class="card-title">SwiftUI Instagram Replica App</h4>
-                                <p class="card-text">[ Work in progress ]</p>
-                                <a class="btn"><i class="fas fa-arrow-down"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 pb-4">
-                        <div class="card">
-                            <img class="card-img-top" src="">
-                            <div class="card-body">
-                                <h4 class="card-title">SwiftUI / API MovieDB</h4>
-                                <p class="card-text">[ Work in progress ]</p>
-                                <a class="btn"><i class="fas fa-arrow-down"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <article>
-                    <img class="article-img" src="" alt=" " />
-                    <h6 class="article-title">
-                        SwiftUI Instagram Replica App
-                    </h6>
-                </article>
-                <article>
-                    <img class="article-img" alt=" " /> <!-- src="images/specto_iphone12.png" -->
-                    <!-- <h6 class="article-title">
-                        SwiftUI Specto Prototype App
-                    </h6>
-                </article>
-                <article>
-                    <img class="article-img" src="" alt=" " />
-                    <h6 class="article-title">
-                        SwiftUI / API MovieDB App
-                    </h6>
-                </article>
-                <article>
-                    <img class="article-img" src="" alt=" " />
-                    <h6 class="article-title">
-                        C# EduBot Prototype Applicatie
-                    </h6>
-                </article> -->
-                <!-- <article>
+            </article>
+            <article>
+                <img class="article-img" alt=" " /> <!-- src="images/specto_iphone12.png" -->
+                <!-- <h6 class="article-title">
+                    SwiftUI Specto Prototype App
+                </h6>
+            </article>
+            <article>
+                <img class="article-img" src="" alt=" " />
+                <h6 class="article-title">
+                    SwiftUI / API MovieDB App
+                </h6>
+            </article>
+            <article>
+                <img class="article-img" src="" alt=" " />
+                <h6 class="article-title">
+                    C# EduBot Prototype Applicatie
+                </h6>
+            </article> -->
+            <!-- <article>
                         <img class="article-img" src="" alt=" " />
                         <h6 class="article-title">
                             Android Consolomio Control Panel
                         </h6>
                     </article> -->
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="section">
-        <div class="container">
+        <section id="contact" class="section">
             <p class="title">Neem gerust contact op</p>
-            <div class="content">
-                <ul class="about-links">
-                    <li>
-                        <a href="mailto:svenroermond@hotmail.com" target="_blank" title="Mail" class="grow-small"><i class="fas fa-envelope"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/dev-svenhansen/" target="_blank" title="LinkedIn" class="grow-small"><i class="fab fa-linkedin"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.github.com/svennetje/" target="_blank" title="Github" class="grow-small"><i class="fab fa-github-square"></i></a>
-                    </li>
-                    <li>
-                        <a href="resume.pdf" target="_blank" title="Download Resume" class="grow-small no-underline">CV</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="footer" class="section">
-        <div class="container">
+        <section id="footer" class="section">
+            <div class="about-links pt-md-4"><a href="mailto:svenroermond@hotmail.com" target="_blank" title="Mail" class="grow-small"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/dev-svenhansen/" target="_blank" title="LinkedIn" class="grow-small"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.github.com/svennetje/" target="_blank" title="Github" class="grow-small"><i class="fab fa-github-square"></i></a>
+                <a href="resume.pdf" target="_blank" title="Download CV" class="grow-small no-underline">CV</a>
+            </div>
             <p><small>Geprogrammeerd door Sven Hansen</small></p>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init()</script>
 </body>
 </html>

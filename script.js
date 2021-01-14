@@ -74,4 +74,3 @@ $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
     $('#nav-icon').toggleClass('open');
 });
-// }

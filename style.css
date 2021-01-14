@@ -45,16 +45,8 @@ ul {
     padding: 0;
     overflow: hidden;
 }
-  
-.navigation li {
-    float: right;    
-}
 
-nav {
-    width: 100%;
-}
-
-.highlight {
+.purple {
     color: #4339B2;
 }
 
@@ -63,12 +55,16 @@ nav {
     z-index: 2;
 }
   
-li a {
-    display: block;
+li a, .about-links a, .go-down{
+    display: inline-block;
     padding: 20px;
     color: var(--black);
     font-weight: bold;
     text-decoration: none;
+    text-align: center;
+}
+
+.about-links {
     text-align: center;
 }
 
@@ -91,6 +87,22 @@ li a {
     margin-top: 25px;
 }
 
+#home {
+    margin: 10% 0% 37.5% 0%;
+}
+
+#about {
+    margin-bottom: 10%;
+}
+
+#projects {
+    margin-bottom: 10%;
+}
+
+.skills, .years, .experience {
+    margin-bottom: 7.5%;
+}
+
 .ludwig {
     position: relative;
     font-family: 'Montserrat', sans-serif;
@@ -99,13 +111,14 @@ li a {
     color: lighten(var(--black), 40%);
 }
 
-.about-links li {
-    float: left;
+.go-down {
+    text-align: center;
+    width: 100%;
 }
 
 .comment {
     color: var(--black);
-    opacity: 0.5;
+    opacity: 0.35;
 }
 
 .i4things {
@@ -137,10 +150,6 @@ li a {
 .icon {
     height: 32px;
     width: 32px;
-}
-
-.content {
-    padding-left: 2.5vw;
 }
 
 /* || Custom animations */
