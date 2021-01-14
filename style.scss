@@ -195,47 +195,36 @@ li a,
     }
 }
 
-/* || Projects Grid */
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 30px;
-    max-width: 960px;
-    margin: 0 auto 30px;
-}
-
-article {
-    position: relative;
-}
-
-.article-img {
-    height: 200px;
-    width: 100%;
-    object-fit: scale-down;
-    border-radius: 12px;
-}
-
-.article-title {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    /* background-color: #60000000; */
-}
-
-.card-img-top {
-    height: 300px;
-    width: 100%;
-    object-fit: scale-down;
-    border-radius: 12px;
-}
-
 .tab {
     background-color: var(--lightgray);
 }
 
-/* Mobile Navbar Icon Animation */
+/* || Projects Grid */
+
+.card {
+    &-body {
+        margin-top: 2%;
+        background-color: #F2F2F2;
+        border-radius: 15px;
+    }
+
+    &-img-top {
+        height: 300px;
+        width: 100%;
+        object-fit: scale-down;
+        border-radius: 12px;
+    }
+
+    &-title {
+        width: 100%;
+    }
+    
+    &-arrow {
+        float: right;
+    }
+}
+
+/* || Mobile Navbar Icon Animation */
 
 #nav-icon {
     width: 60px;

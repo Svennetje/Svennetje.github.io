@@ -196,35 +196,15 @@ li a,
   transform: scale(2);
 }
 
+.tab {
+  background-color: var(--lightgray);
+}
+
 /* || Projects Grid */
-.cards {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 30px;
-  max-width: 960px;
-  margin: 0 auto 30px;
-}
-
-article {
-  position: relative;
-}
-
-.article-img {
-  height: 200px;
-  width: 100%;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
-  border-radius: 12px;
-}
-
-.article-title {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 10px;
-  /* background-color: #60000000; */
+.card-body {
+  margin-top: 2%;
+  background-color: #F2F2F2;
+  border-radius: 15px;
 }
 
 .card-img-top {
@@ -235,11 +215,15 @@ article {
   border-radius: 12px;
 }
 
-.tab {
-  background-color: var(--lightgray);
+.card-title {
+  width: 100%;
 }
 
-/* Mobile Navbar Icon Animation */
+.card-arrow {
+  float: right;
+}
+
+/* || Mobile Navbar Icon Animation */
 #nav-icon {
   width: 60px;
   height: 37.5px;
