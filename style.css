@@ -27,12 +27,12 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+#firstSlide {
+  height: 100vh;
+  padding-top: 10%;
+}
+
+h1, h2, h3, h4, h5, h6 {
   color: var(--navy);
 }
 
@@ -77,24 +77,12 @@ li a,
   display: block;
 }
 
-.sticky {
-  position: fixed;
-  top: 2.5vw;
-  left: 2.5vw;
-}
-
 .title {
   font-size: 0.8em;
   font-weight: 700;
   color: #b3b3b3;
   letter-spacing: 1.5px;
   margin-top: 25px;
-}
-
-#home {
-  height: 100vh;
-  margin-top: 10%;
-  /* margin: 10% 0% 37.5% 0%; */
 }
 
 #about {

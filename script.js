@@ -1,3 +1,4 @@
+// Var that checks if getting runned on phone
 var isMobile = {
     Android: function() {
         return navigator.userAgent.match(/Android/i);
@@ -19,6 +20,7 @@ var isMobile = {
     }
 };
 
+// Function that adds smooth scrolling to links
 $(document).ready(function(){
 
     // Add smooth scrolling to all links
@@ -62,15 +64,41 @@ $(document).ready(function(){
     });
 });
 
-// if(isMobile()) {
+// Function that adds scrollify for landing page
 $(document).ready(function(){
-	$('#nav-icon').click(function(){
-		$('#nav-icon').toggleClass('open');
-	});
+    $.scrollify({
+        section: "section",
+        sectionName: "section-name",
+        interstitialSection: "",
+        easing: "easeOutExpo",
+        scrollSpeed: 1100,
+        offset: 0,
+        scrollbars: true,
+        standardScrollElements: "",
+        setHeights: true,
+        overflowScroll: true,
+        updateHash: true,
+        touchScroll: true,
+        before:function() {},
+        after:function() {},
+        afterResize:function() {},
+        afterRender:function() {}
+    });
+    $(function() {
+        $.scrollify({
+            section : ".slide",
+        });
+    });  
 });
 
 // Collapse navbar after onclick navbar-item
-$('.navbar-nav>li>a').on('click', function(){
-    $('.navbar-collapse').collapse('hide');
-    $('#nav-icon').toggleClass('open');
-});
+// $('.navbar-nav>li>a').on('click', function(){
+//     $('.navbar-collapse').collapse('hide');
+//     $('#nav-icon').toggleClass('open');
+// });
+
+// $(document).ready(function(){
+// 	$('#nav-icon').click(function(){
+// 		$('#nav-icon').toggleClass('open');
+// 	});
+// });
