@@ -64,32 +64,21 @@ $(document).ready(function(){
     });
 });
 
-// Function that adds scrollify for landing page
-$(document).ready(function(){
-    $.scrollify({
-        section: "section",
-        sectionName: "section-name",
-        interstitialSection: "",
-        easing: "easeOutExpo",
-        scrollSpeed: 1100,
-        offset: 0,
-        scrollbars: true,
-        standardScrollElements: "",
-        setHeights: true,
-        overflowScroll: true,
-        updateHash: true,
-        touchScroll: true,
-        before:function() {},
-        after:function() {},
-        afterResize:function() {},
-        afterRender:function() {}
-    });
-    $(function() {
-        $.scrollify({
-            section : ".slide",
-        });
-    });  
-});
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+
 
 // Collapse navbar after onclick navbar-item
 // $('.navbar-nav>li>a').on('click', function(){

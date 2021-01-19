@@ -30,7 +30,7 @@ html {
     font-family: "Montserrat", sans-serif;
 }
 
-#firstSlide {
+#home {
     height: 100vh;
     padding-top: 10%;
 }
@@ -146,6 +146,22 @@ li a,
 .icon {
     height: 32px;
     width: 32px;
+}
+  
+.collapsible:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f067";
+}
+  
+.active:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f068";
+}
+  
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 /* || Custom animations */
