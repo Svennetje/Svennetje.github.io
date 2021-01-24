@@ -9,7 +9,7 @@
     <meta name="author" content="Sven Hansen">
     <meta name="copyright" content="Sven Hansen"/>
     <meta name="keywords" content=""/> <!-- TODO: Meta keywords invullen -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="logo/logo_small.png"/>
@@ -21,34 +21,13 @@
 
 <body>  
     <div class="container">
-        <!--<section id="top" class="section">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <div id="nav-icon">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </div>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav align-items-center">
-                        <li class="nav-item"><a href="#home" class="fas fa-igloo grow-small no-underline"><br>Home</a></li>
-                        <li class="nav-item"><a href="#about" class="fab fa-slideshare grow-small no-underline"><br>Over</a></li>
-                        <li class="nav-item"><a href="#projects" class="fas fa-code grow-small no-underline"><br>Projecten</a></li>
-                        <li class="nav-item"><a href="#contact" class="fab fa-wpforms grow-small no-underline"><br>Contact</a></li>
-                        <li class="nav-item"><a onclick=""><img src="icons/united-kingdom.svg" id="language" class="icon"/></a></li>
-                    </ul>
-                </div>
-            </nav>
-        </section> -->
-        <section id="home" class="section" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="900">
+        <section id="home" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="900">
             <p class="title"></p>
             <h1>
                 <b>
                     Hey! Ik ben Sven ¬
                     <br>
-                    — een <span class="purple">Software 👨🏼‍💻</span> en <span class="purple">Mobile 📱</span> developer
+                    — een <span>Software</span> 👨🏼‍💻 en <span>Mobile</span> 📱 developer
                 </b>
             </h1>
             <blockquote class="ludwig">
@@ -67,7 +46,7 @@
                 <a href="mailto:svenroermond@hotmail.com" target="_blank" title="Mail" class="grow-small"><i class="fas fa-envelope"></i></a>
                 <a href="https://www.linkedin.com/in/dev-svenhansen/" target="_blank" title="LinkedIn" class="grow-small"><i class="fab fa-linkedin"></i></a>
                 <a href="https://www.github.com/svennetje/" target="_blank" title="Github" class="grow-small"><i class="fab fa-github-square"></i></a>
-                <a href="resume.pdf" target="_blank" title="Download CV" class="grow-small no-underline">CV</a>
+                <a href="app/files/resume.pdf" target="_blank" title="Download CV" class="grow-small no-underline">CV</a>
             </div>
             <div style="text-align: center;">
                 <a href="#about" class="fas fa-arrow-down grow-medium no-underline go-down"></a>
@@ -75,7 +54,7 @@
             <!-- <img src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Light'></div> -->
         </section>
 
-        <section id="about" class="section">
+        <section id="about">
             <p class="title" data-aos="fade-up" data-aos-duration="750">INFORMATIE</p>
             
             <div class="skills" data-aos="fade-up" data-aos-duration="1000">
@@ -94,9 +73,9 @@
                     <div class="col-sm-4 pt-2">
                         <b class="">Software Ontwikkeling</b>
                         <br>
-                        C#, SQL, Databases, Git,
+                        C#, Databases, SQL,
                         <br>
-                        Gitflow, Scrum
+                        Git, Gitflow, Scrum
                     </div>
                 </div>
             </div>
@@ -124,6 +103,8 @@
                         SQL/+4
                     </div>
                     <div class="col-sm-2 pt-md-2">
+                        Git/+3
+                        <br>
                         Gitflow/+1
                         <br>
                         Scrum/+3
@@ -167,32 +148,32 @@
                     <div class="col-sm-4 pt-2">
                         <span class="comment">Moedertaal</span>
                         <br>
-                        <i class="country-code"><b class="">nl-NL</b></i>
+                        <i><b>nl-NL</b></i>
                         Nederlands
                     </div>
                     <div class="col-sm-4 pt-2">
                         <span class="comment">Professioneel</span>
                         <br>
-                        <i class="country-code"><b class="">en-US</b></i>
+                        <i><b>en-US</b></i>
                         Engels
                     </div>
                     <div class="col-sm-4 pt-2">
                         <span class="comment">Beperkt</span>
                         <br>
-                        <i class="country-code"><b class="">de-DE</b></i>
+                        <i><b>de-DE</b></i>
                         Duits
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="section">
+        <section id="projects">
             <p class="title" data-aos="fade-up" data-aos-duration="750">VRIJETIJDS PROJECTEN</p>
 
             <div class="row">
                 <div class="col-sm-6 pb-4" data-aos="fade-up" data-aos-duration="1000">
                     <div class="card border-0">
-                        <img class="card-img-top" src="images/empty_iphone12.jpg"> <!-- images/specto_iphone12.png -->
+                        <img class="card-img-top" src="app/images/empty_iphone12.jpg"> <!-- images/specto_iphone12.png -->
                         <div class="card-body">
                             <h4 class="card-title">SwiftUI Specto Prototype App</h4>
                             <span class="collapsible no-underline"></span>
@@ -204,7 +185,7 @@
                 </div>
                 <div class="col-sm-6 pb-4" data-aos="fade-up" data-aos-duration="1000">
                     <div class="card border-0">
-                        <img class="card-img-top" src="images/empty_iphone12.jpg"> <!-- images/weather_iphone12.png -->
+                        <img class="card-img-top" src="app/images/empty_iphone12.jpg"> <!-- images/weather_iphone12.png -->
                         <div class="card-body">
                             <h4 class="card-title">SwiftUI / API Weather App</h4>
                             <span class="collapsible no-underline"></span>
@@ -218,7 +199,7 @@
             <div class="row">
                 <div class="col-sm-6 pb-4" data-aos="fade-up" data-aos-duration="1000">
                     <div class="card border-0">
-                        <img class="card-img-top" src="images/empty_iphone12.jpg"> <!-- images/instagramReplica_iphone12.png -->
+                        <img class="card-img-top" src="app/images/empty_iphone12.jpg"> <!-- images/instagramReplica_iphone12.png -->
                         <div class="card-body">
                             <h4 class="card-title">SwiftUI Instagram Replica App</h4> 
                             <span class="collapsible no-underline"></span>
@@ -230,7 +211,7 @@
                 </div>
                 <div class="col-sm-6 pb-4" data-aos="fade-up" data-aos-duration="1000">
                     <div class="card border-0">
-                        <img class="card-img-top" src="images/empty_iphone12.jpg">
+                        <img class="card-img-top" src="app/images/empty_iphone12.jpg">
                         <div class="card-body">
                             <h4 class="card-title">SwiftUI / API MovieDB</h4>
                             <span class="collapsible no-underline"></span>
@@ -244,10 +225,10 @@
             </div>
         </section>
     
-        <section id="contact" class="section">
-            <p class="title" data-aos="fade-up" data-aos-duration="750">Neem gerust contact op</p>
+        <section id="contact">
+            <p class="title">Neem gerust contact op</p>
 
-            <div class="about-links pt-md-4" data-aos="fade-up" data-aos-duration="1000">
+            <div class="about-links pt-md-4">
                 <a href="mailto:svenroermond@hotmail.com" target="_blank" title="Mail" class="grow-small"><i class="fas fa-envelope"></i></a>
                 <a href="https://www.linkedin.com/in/dev-svenhansen/" target="_blank" title="LinkedIn" class="grow-small"><i class="fab fa-linkedin"></i></a>
                 <a href="https://www.github.com/svennetje/" target="_blank" title="Github" class="grow-small"><i class="fab fa-github-square"></i></a>
@@ -255,12 +236,12 @@
             </div>
         </section>
 
-        <section id="footer" class="section">
+        <section id="footer">
             <p><small>Ontworpen door Sven Hansen</small></p>
         </section>
     </div>
 
-    <script src="script.js"></script>
+    <script src="app/js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init()</script>
 </body>
